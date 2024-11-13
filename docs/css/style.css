@@ -18,8 +18,8 @@ body {
 
 form {
   padding: 30px;
-  background: rgba(100, 100, 100, 0.02);
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(100, 100, 100, 0.05);
+  border: 2px solid rgba(255, 255, 255, 0.4);
   border-radius: 10px;
   -webkit-filter: drop-shadow(3px 3px 3px #999);
           filter: drop-shadow(3px 3px 3px #999);
