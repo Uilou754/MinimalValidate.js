@@ -5,16 +5,19 @@
 }
 
 body {
-  background: -webkit-gradient(linear, left top, left bottom, from(#d5deff), color-stop(#ffffff), to(30deg));
-  background: linear-gradient(#d5deff, #ffffff, 30deg);
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(30deg, #d5deff, #ffffff);
 }
 
 .contents {
   margin: 0px auto;
+  padding: 15px;
   max-width: 720px;
 }
 
 form {
+  padding: 30px;
   background: rgba(50, 50, 50, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 10px;
