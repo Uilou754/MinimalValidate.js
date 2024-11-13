@@ -11,15 +11,40 @@
     <div class="contents">
         <form class="v-form" action="" method="GET">
             <h2>form</h2>
+
+            <p>jQueryを前提としています。jQueryを読み込んでおいてください。</p>
             <p>入力検証を行うformタグにはclass="v-form"を付与してください。</p>
 
-            <pre><code><form class="v-form"></form></code></pre>
-
             <div class="input-wrapper">
-                <label>必須入力（class="is-invalid"）</label>
-                <input type="text" class="is-invalid" />
+                <label>必須入力（class="v-text-required"）</label>
+                <input type="text" class="v-text-required" />
             </div>
+            
+            <div class="input-wrapper">
+                <label>半角英数字のみ（class="v-text-alphanumeric"）</label>
+                <input type="text" class="v-text-alphanumeric" />
+            </div>
+            
+            <div class="input-wrapper">
+                <label>数字のみ（class="v-text-number"）</label>
+                <input type="text" class="v-text-number" />
+            </div>
+            
+            <div class="input-wrapper">
+                <label>必須選択（class="v-select-required"）</label>
+                <select class="v-select-required">
+                    <option value="1">選択肢01</option>
+                    <option value="2">選択肢02</option>
+                    <option value="3">選択肢03</option>
+                    <option value="4">選択肢04</option>
+                </select>
+            </div>
+
+            <input type="submit" value="送信する"/>
         </form>
     </div>
+
+    <script src="./js/jquery-3.7.1.min.js" defer></script>
+    <script src="../dist.js" defer></script>
 </body>
 </html>
